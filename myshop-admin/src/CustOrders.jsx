@@ -1,4 +1,4 @@
-import {Datagrid, Show, Edit, SimpleForm, SimpleShowLayout, List, TextField, NumberField, NumberInput, TextInput, required, Create, ReferenceField, ReferenceInput } from 'react-admin';
+import {Datagrid, Show, Edit, SimpleForm, SimpleShowLayout, List, NumberField, NumberInput, required, Create, ReferenceField, ReferenceInput } from 'react-admin';
 
 export const CustOrdersShow = () => (
     <Show>
@@ -12,7 +12,7 @@ export const CustOrdersShow = () => (
 );
 
 export const CustOrdersList = () => (
-    <List reference='custorders'>
+    <List>
         <Datagrid>
             <NumberField source='order_id' label='Order ID'/>
             <ReferenceField source='prod_id' reference='products' label='Product ID'/>

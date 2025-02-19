@@ -12,7 +12,7 @@ export const ProductShow = () => (
 );
 
 export const ProductList = () => (
-    <List reference='products'>
+    <List>
         <Datagrid>
             <NumberField source="prod_id" label='ID'/>
             <TextField source="prod_name" label='Name'/>
